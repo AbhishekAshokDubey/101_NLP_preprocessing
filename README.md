@@ -1,7 +1,7 @@
 # 101_NLP_preprocessing
 
 
-Author: Abhishek Dubey
+Author: Abhishek Dubey<br/>
 Version: 0.1
 
 ##### Installation prerequisites 
