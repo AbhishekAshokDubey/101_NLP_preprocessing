@@ -5,27 +5,20 @@ Author: Abhishek Dubey
 Version: 0.1
 
 ##### Installation prerequisites 
-"Please install nltk, gensim & other libraries below (using following commands)"
+Please install nltk, gensim & other libraries below (using following commands)
 
-pip install nltk
-
-pip install gensim
-
-pip install autocorrect
-
-pip install Hunspell-CFFI
+pip install nltk<br/>
+pip install gensim<br/>
+pip install autocorrect<br/>
+pip install Hunspell-CFFI<br/>
 
 Please also install following packages/ corpus for nltk (use following commands inside python):
 
-import nltk
-
-nltk.download('wordnet')
-
-nltk.download('averaged_perceptron_tagger')
-
-nltk.download('stopwords')
-
-nltk.download('punkt')
+import nltk<br/>
+nltk.download('wordnet')<br/>
+nltk.download('averaged_perceptron_tagger')<br/>
+nltk.download('stopwords')<br/>
+nltk.download('punkt')<br/>
 
 ##### Sample code
 ```
