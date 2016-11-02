@@ -19,12 +19,14 @@ nltk.download('stopwords')
 nltk.download('punkt')
 
 ##### Sample code
-
+'''
 config_file_path = "path to the yaml file"
 pipeout = processtext.pipeline(config_file_path)
- 
+'''
+
 OR
 
+'''
 text_list1 = processtext.readfile('mydata.csv',column_info='text')
 text_list1 = processtext.readfile('mydata.csv',column_info=1)
 text_list1 = list(text_list1.values.flatten())
@@ -38,7 +40,7 @@ text_list_spell2 = processtext.spellcorrection(text_list,spell_corrector = 'huns
 
 text_list_stemp = processtext.stem(text_list, stemmertype = 'porter')
 text_list_steml = processtext.stem(text_list, stemmertype = 'lancaster')
-
+'''
 
 #Note:
-For the yaml & other sample resource files check the "Resources folder":
+For the yaml & other sample resource files check the "Resources" folder:
