@@ -4,7 +4,8 @@
 Author: Abhishek Dubey<br/>
 Version: 0.1
 
-##### Installation prerequisites 
+
+### Installation prerequisites 
 Please install nltk, gensim & other libraries below (using following commands)
 
 pip install nltk<br/>
@@ -20,7 +21,13 @@ nltk.download('averaged_perceptron_tagger')<br/>
 nltk.download('stopwords')<br/>
 nltk.download('punkt')<br/>
 
-##### Sample code
+
+### Installation steps<br/>
+1. cd 'path to repo'
+2. python setup.py install
+
+
+### Sample code
 ```
 config_file_path = "path to the yaml file"
 pipeout = processtext.pipeline(config_file_path)
@@ -44,5 +51,5 @@ text_list_stemp = processtext.stem(text_list, stemmertype = 'porter')
 text_list_steml = processtext.stem(text_list, stemmertype = 'lancaster')
 ```
 
-#Note:
+##Note:
 For the yaml & other sample resource files check the "Resources" folder:
