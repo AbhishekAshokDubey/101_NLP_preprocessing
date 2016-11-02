@@ -33,8 +33,8 @@ text_list2 = processtext.readfile('mydata.txt',column_info=1)
 text_list_stpwrd = processtext.removestopword(text_list)
 text_list_dict = processtext.dict_replace(text_list1, regex_dict_path = r"path to regex file")
 
-#text_list_spell1 = processtext.spellcorrection(text_list)
-#text_list_spell2 = processtext.spellcorrection(text_list,spell_corrector = 'hunspell', dictpath=r"C:\Users\Adubey4\Desktop\pychant\dict-en")
+text_list_spell1 = processtext.spellcorrection(text_list)
+text_list_spell2 = processtext.spellcorrection(text_list,spell_corrector = 'hunspell', dictpath=r"C:\Users\Adubey4\Desktop\pychant\dict-en")
 
 text_list_stemp = processtext.stem(text_list, stemmertype = 'porter')
 text_list_steml = processtext.stem(text_list, stemmertype = 'lancaster')
