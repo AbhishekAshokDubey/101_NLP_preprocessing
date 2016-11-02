@@ -53,3 +53,37 @@ text_list_steml = processtext.stem(text_list, stemmertype = 'lancaster')
 
 ##Note:
 For the yaml & other sample resource files check the "Resources" folder:
+
+A sample YAML file for the pipeline:
+```
+readfile:
+    path: 'C:\Users\Adubey4\Desktop\text_preProces\nlpslb\resources\sample_text.csv'
+    column_info: text # column name/ number
+stopword_removal:
+    stopwords_file_path: 'C:\Users\Adubey4\Desktop\text_preProces\nlpslb\resources\sample_extra_stopword.csv'
+    append_to_default_list: False
+spell_correction:
+    spell_corrector_type : autocorrect # options: autocorrect, hunspell
+    spell_list_hunspell : 'C:\Users\Adubey4\Desktop\pychant\dict-en'
+dict_replacement:
+    regex_dict_path : 'C:\Users\Adubey4\Desktop\text_preProces\nlpslb\resources\sample_regex_dict.csv'
+    word_dict_path : 'C:\Users\Adubey4\Desktop\text_preProces\nlpslb\resources\sample_word_dict.csv'
+stemming:
+    stemmertype: porter # options: porter, lancaster
+lemmatizer:
+    lemmatizertype : wordnet # options: wordnet
+postagging:
+    tagger: nltk
+word2vec_model:
+    word2vec_algo: gensim
+    train_textcorpus: brown # options: 'samedata', 'brown', 'movie_reviews', 'treebank' corpus from nltk corpus
+pipeline:
+    stopword_removal: 1 # No operation is 0, First operation is 1, Second operation is 2 and so on
+    spell_correction: 0
+    dict_replacement: 2
+    stemming: 0
+    lemmatizer: 3
+    postagging: 0
+    word2vec_model: 4
+    doc2vec_model: 0
+```
