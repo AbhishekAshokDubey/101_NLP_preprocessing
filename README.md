@@ -52,22 +52,22 @@ text_list_steml = processtext.stem(text_list, stemmertype = 'lancaster')
 ```
 
 ##Note:
-For the yaml & other sample resource files check the "Resources" folder:
+For the yaml & other sample resource files, referred below, check the "Resources" folder:
 
 A sample YAML file for the pipeline:
 ```
 readfile:
-    path: 'C:\Users\Adubey4\Desktop\text_preProces\nlpslb\resources\sample_text.csv'
+    path: 'path to main text file'
     column_info: text # column name/ number
 stopword_removal:
-    stopwords_file_path: 'C:\Users\Adubey4\Desktop\text_preProces\nlpslb\resources\sample_extra_stopword.csv'
+    stopwords_file_path: 'path for the stop words file'
     append_to_default_list: False
 spell_correction:
     spell_corrector_type : autocorrect # options: autocorrect, hunspell
     spell_list_hunspell : 'C:\Users\Adubey4\Desktop\pychant\dict-en'
 dict_replacement:
-    regex_dict_path : 'C:\Users\Adubey4\Desktop\text_preProces\nlpslb\resources\sample_regex_dict.csv'
-    word_dict_path : 'C:\Users\Adubey4\Desktop\text_preProces\nlpslb\resources\sample_word_dict.csv'
+    regex_dict_path : 'path to regex file'
+    word_dict_path : 'path for dict replacement file'
 stemming:
     stemmertype: porter # options: porter, lancaster
 lemmatizer:
