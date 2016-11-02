@@ -1,0 +1,4 @@
+order,replace_with,search_for
+1, temperature, \d+\s*\u00b0\s*(c|f)
+2, money, (\$\d+)
+3, number, \d+

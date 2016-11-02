@@ -1,0 +1,4 @@
+include readme
+include resources/*.yaml
+include resources/*.csv
+include resources/*.txt

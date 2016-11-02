@@ -1,0 +1,16 @@
+MANIFEST.in
+readme
+setup.py
+resources/sample_extra_stopword.csv
+resources/sample_nlp_config_pipeline.yaml
+resources/sample_regex_dict.csv
+resources/sample_text.csv
+resources/sample_text.txt
+resources/sample_word_dict.csv
+slbnlppipeline/__init__.py
+slbnlppipeline/processtext.py
+slbnlppipeline.egg-info/PKG-INFO
+slbnlppipeline.egg-info/SOURCES.txt
+slbnlppipeline.egg-info/dependency_links.txt
+slbnlppipeline.egg-info/requires.txt
+slbnlppipeline.egg-info/top_level.txt

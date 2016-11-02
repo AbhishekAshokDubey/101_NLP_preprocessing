@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: slbnlppipeline
+Version: 0.1
+Summary: NLP pipeline
+Home-page: UNKNOWN
+Author: Abhishek Dubey
+Author-email: adubey40@gmail.com
+License: BSD
+Description: A nlp pipeline For & By ADS at SLB pune, build over NLTL & Gensim
+Keywords: nlp
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
