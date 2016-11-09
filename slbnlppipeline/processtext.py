@@ -122,6 +122,10 @@ def stem(text_list, stemmertype = 'porter'):
     
 
 def lemmatize(text_list, lemmatizertype = 'wordnet'):
+    # for better lemmatization results, use the commented code below
+    # import wordnet
+    # pos_dict = {'NN':wordnet.NOUN, 'NNS':wordnet.NOUN, 'NNP':wordnet.NOUN, 'NNPS':wordnet.NOUN, 'VB':wordnet.VERB, 'VBD':wordnet.VERB, 'VBG':wordnet.VERB, 'VBN':wordnet.VERB, 'VBP':wordnet.VERB, 'VBZ':wordnet.VERB,'RB':wordnet.ADV, 'RBR':wordnet.ADV, 'RBS':wordnet.ADV,'JJ':wordnet.ADJ, 'JJR':wordnet.ADJ, 'JJS':wordnet.ADJ}
+    # [lemmatizer.lemmatize(w,pos=pos_dict.get(t,wordnet.NOUN)) for (w,t) in p(word_tokenize(line))]
     lemmatizer = nltk.WordNetLemmatizer()
     clean_text_list = [];
     for line in text_list:
