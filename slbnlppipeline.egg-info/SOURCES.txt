@@ -1,5 +1,4 @@
 MANIFEST.in
-readme
 setup.py
 resources/sample_extra_stopword.csv
 resources/sample_nlp_config_pipeline.yaml
@@ -9,6 +8,7 @@ resources/sample_text.txt
 resources/sample_word_dict.csv
 slbnlppipeline/__init__.py
 slbnlppipeline/processtext.py
+slbnlppipeline/summarizer.py
 slbnlppipeline.egg-info/PKG-INFO
 slbnlppipeline.egg-info/SOURCES.txt
 slbnlppipeline.egg-info/dependency_links.txt
