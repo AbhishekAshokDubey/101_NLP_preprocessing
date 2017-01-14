@@ -29,8 +29,9 @@ nltk.download('punkt')<br/>
 
 ### Sample code
 ```
+from slbnlppipeline import pipeline
 config_file_path = "path to the yaml file"
-pipeout = processtext.pipeline(config_file_path)
+pipeout = pipeline.runit(config_file_path)
 ```
 
 OR

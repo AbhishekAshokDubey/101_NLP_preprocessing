@@ -27,7 +27,7 @@ from nltk.corpus import stopwords
 import processtext
 import summarizer
 
-def pipeline(config_file_path, sequence=[]):
+def runit(config_file_path, sequence=[]):
     with open(config_file_path, 'r') as ymlfile:
         cfg = yaml.load(ymlfile)
     sorted_operation_order = sorted(cfg['pipeline'].items(), key=operator.itemgetter(1))
@@ -73,4 +73,4 @@ def pipeline(config_file_path, sequence=[]):
     return text_list
 
 #config_file_path = r"C:\Users\Adubey4\Desktop\git\101_NLP_preprocessing\resources\sample_nlp_config_pipeline.yaml"
-#a = pipeline(config_file_path)
+#a = runit(config_file_path)
