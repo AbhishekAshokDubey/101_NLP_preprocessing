@@ -7,6 +7,7 @@ resources/sample_text.csv
 resources/sample_text.txt
 resources/sample_word_dict.csv
 slbnlppipeline/__init__.py
+slbnlppipeline/pipeline.py
 slbnlppipeline/processtext.py
 slbnlppipeline/summarizer.py
 slbnlppipeline.egg-info/PKG-INFO

@@ -21,7 +21,9 @@ setup(
     "nltk",
     "gensim",
     "autocorrect",
-	"scipy"
+	"scipy",
+	"pandas",
+	"pyyaml"
     ],
     #package_data={'slbnlppipeline': ['data/*.csv']},
 #    data_files=[('slbnlppipeline', ['nlp_pipeline_config.yaml']),

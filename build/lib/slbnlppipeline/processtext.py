@@ -11,7 +11,6 @@ import re
 import gensim
 from autocorrect import spell
 from gensim.models.doc2vec import Doc2Vec, LabeledSentence
-from collections import defaultdict
 
 try:
     import hunspell_cffi as hunspell
@@ -34,26 +33,6 @@ def readfile(path, column_info=0):
     elif file_ext == '.txt':
         with open(path) as f:
             return f.readlines()
-
-#import yaml
-#config_file_path = r"C:\Users\Adubey4\Desktop\git\101_NLP_preprocessing\resources\sample_nlp_config_pipeline.yaml"
-#with open(config_file_path, 'r') as ymlfile:
-#    cfg = yaml.load(ymlfile)
-#p_dic = cfg["replace-punctuation"]["p_dic"]
-#text_list = ["now lets. try something", "this time? I need ", "now hat is cat"]
-#def replace_punctuation(text_list, p_dic = {}):
-#    for line in text_list:
-#        pattern_list = [];
-#        for val in list(p_dic):
-#            if val == "." or val == "?":
-#                sub = "\\"+val
-#                pattern_list.append('(?P<_'+p_dic[val]+'>'+sub+')')
-#        pattern_str = "|".join(pattern_list)
-#        print(pattern_str)
-#        pattern = re.compile(pattern_str)
-#        return pattern.sub(lambda m: m.lastgroup, "\n".join(text_list).lower())
-#
-#print(replace_punctuation(text_list, p_dic))
 
 def get_iterable_labeledsentences(text_list):
     data = []
@@ -171,7 +150,7 @@ def spellcorrection(text_list, spell_corrector = 'autocorrect', dictpath=r"C:\Us
     clean_text_list = [];
     if spell_corrector.lower() == 'autocorrect':
         for line in text_list:
-            clean_text_list.append(' '.join([spell(x) if len(x)>1 else x for x in line.split()]))
+            clean_text_list.append(' '.join([spell(x) for x in line.split()]))
         return clean_text_list;
 
     elif spell_corrector.lower() == 'hunspell':

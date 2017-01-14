@@ -2,3 +2,5 @@ nltk
 gensim
 autocorrect
 scipy
+pandas
+pyyaml

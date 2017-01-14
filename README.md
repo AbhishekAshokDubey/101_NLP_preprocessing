@@ -77,13 +77,19 @@ postagging:
 word2vec_model:
     word2vec_algo: gensim
     train_textcorpus: brown # options: 'samedata', 'brown', 'movie_reviews', 'treebank' corpus from nltk corpus
+doc2vec_model:
+    doc2vec_algo: gensim
+summarization:
+    type: doc_vec # options: doc_vec & word_freq
+    sent_len: 1
 pipeline:
     stopword_removal: 1 # No operation is 0, First operation is 1, Second operation is 2 and so on
-    spell_correction: 0
-    dict_replacement: 2
+    spell_correction: 2
+    dict_replacement: 0
     stemming: 0
-    lemmatizer: 3
+    lemmatizer: 0
     postagging: 0
-    word2vec_model: 4
+    word2vec_model: 3
     doc2vec_model: 0
+    summarization: 0
 ```
